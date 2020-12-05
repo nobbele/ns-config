@@ -1,0 +1,17 @@
+[package]
+name = "nsconfig"
+version = "0.1.0"
+authors = ["Nobbele <realnobbele@gmail.com>"]
+edition = "2018"
+
+[lib]
+name = "nsconfig"
+path = "src/lib.rs"
+
+[[bin]]
+name = "nsconfig-bin"
+path = "src/bin.rs"
+
+[dependencies]
+pest = "2.1.3"
+pest_derive = "2.1.0"

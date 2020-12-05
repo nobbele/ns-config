@@ -1,0 +1,10 @@
+Enya {
+    color blue
+    name enya
+    height 170
+}
+MC {
+    color red
+    name mc
+    height 182
+}

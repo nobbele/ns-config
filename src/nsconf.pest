@@ -1,0 +1,9 @@
+WHITESPACE = _{ (" " | "\t" | "\r" | "\n")+ }
+
+name = @{ (ASCII_ALPHANUMERIC)+ }
+property = { name ~ name }
+property_list = { (property)* }
+
+entry = { name ~ "{" ~ property_list ~ "}" }
+
+file = { entry* }
