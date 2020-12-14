@@ -6,4 +6,6 @@ property_list = { (property)* }
 
 entry = { name ~ "{" ~ property_list ~ "}" }
 
-file = { entry* }
+entry_list = { entry* }
+
+file = _{ SOI ~ entry_list ~ EOI }
