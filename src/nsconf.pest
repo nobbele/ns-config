@@ -1,6 +1,6 @@
 WHITESPACE = _{ (" " | "\t" | "\r" | "\n")+ }
 
-name = @{ (ASCII_ALPHANUMERIC)+ }
+name = @{ (ASCII_ALPHANUMERIC | "_")+ }
 property = { name ~ name }
 property_list = { (property)* }
 
